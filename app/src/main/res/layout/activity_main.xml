@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1e32fa"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbar"
+        android:background="@color/transperent"
+        app:title="@string/tares"
+        app:titleTextColor="@color/app_color"
+        app:logo="@drawable/hsbc_logo"
+        android:theme="@style/ThemeOverlay.AppCompat.DayNight.ActionBar" />
+
+
+    <ImageView
+        android:id="@+id/image2View"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginTop="-100dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@null"
+        android:src="@drawable/image2" />
+
+    <ImageView
+        android:id="@+id/image1View"
+        android:layout_width="700dp"
+        android:layout_height="300dp"
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/image1"
+        android:contentDescription="@null" />
+
+
+    <LinearLayout
+        android:id="@+id/language_button"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@drawable/couleurbouton"
+        android:padding="10dp"
+        android:layout_alignParentEnd="true"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp">
+
+        <TextView
+            android:id="@+id/language_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/language_text"
+            android:textColor="#1e32fa"
+            android:textSize="20sp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/sf_pro_display_medium" />
+
+        <ImageView
+            android:id="@+id/language_drap"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/pays_fr"
+            android:contentDescription="@null"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_marginTop="-50dp"
+        android:layout_alignBottom="@id/image2View"
+        tools:ignore="RelativeOverlap">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bienvenue"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:fontFamily="@font/sf_pro_display_bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sur_tares"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:fontFamily="@font/sf_pro_display_bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/debut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/debut"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/image2View"
+        android:textSize="17sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:fontFamily="@font/sf_pro_display_regular" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/debut" >
+
+        <ImageButton
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:background="@drawable/connect"
+            android:foregroundGravity="center"
+            android:textSize="20sp"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="35dp"
+            android:contentDescription="@null" />
+
+        <ImageButton
+            android:id="@+id/btnRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:background="@drawable/register"
+            android:foregroundGravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="35dp"
+            android:contentDescription="@null" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/image5View"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/home"
+        android:scaleType="centerInside"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:contentDescription="@null" />
+
+</RelativeLayout>

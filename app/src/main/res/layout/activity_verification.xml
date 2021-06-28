@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    tools:context=".VerificationActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbar"
+        android:background="@color/transperent"
+        app:title="@string/tares"
+        app:titleTextColor="@color/app_color"
+        app:logo="@drawable/hsbc_logo"
+        android:theme="@style/ThemeOverlay.AppCompat.DayNight.ActionBar" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+
+        <TextView
+            android:id="@+id/seconds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_48_secondes"
+            android:textColor="@color/app_color"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/sf_pro_display_semibold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/please_enter_the_otp_sent_on_your_mobile_phone_number"
+            android:textSize="30sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/sf_pro_display_medium" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/verification_code"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/sf_pro_display_regular" />
+
+
+        <LinearLayout
+            android:id="@+id/pin_inputs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/editTextNumberSigned0"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/rec"
+                android:ems="10"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:imeOptions="actionNext"
+                android:inputType="numberSigned"
+                tools:ignore="LabelFor,MissingConstraints"
+                android:autofillHints="no"
+                android:fontFamily="@font/sf_pro_display_regular" />
+
+            <EditText
+                android:id="@+id/editTextNumberSigned1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/rec"
+                android:ems="10"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:imeOptions="actionNext"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:inputType="numberSigned"
+                tools:ignore="LabelFor,MissingConstraints"
+                android:autofillHints="no"
+                android:fontFamily="@font/sf_pro_display_regular" />
+
+            <EditText
+                android:id="@+id/editTextNumberSigned2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/rec"
+                android:ems="10"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:imeOptions="actionNext"
+                android:inputType="numberSigned"
+                tools:ignore="LabelFor,MissingConstraints"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:importantForAutofill="no"
+                android:fontFamily="@font/sf_pro_display_regular" />
+
+            <EditText
+                android:id="@+id/editTextNumberSigned3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/rec"
+                android:ems="10"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:imeOptions="actionNext"
+                android:inputType="numberSigned"
+                tools:ignore="LabelFor,MissingConstraints"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:importantForAutofill="no"
+                android:fontFamily="@font/sf_pro_display_regular" />
+
+            <EditText
+                android:id="@+id/editTextNumberSigned4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/rec"
+                android:ems="10"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:imeOptions="actionGo"
+                android:inputType="numberSigned"
+                tools:ignore="LabelFor,MissingConstraints"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:importantForAutofill="no"
+                android:fontFamily="@font/sf_pro_display_regular" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/nextBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nextBtn"
+            android:gravity="center"
+            android:textColor="@color/app_color"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/sf_pro_display_bold" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:id="@+id/refresh"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:padding="5dp"
+            android:src="@drawable/refresh_resend"
+            android:background="@drawable/blue"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/resend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/send_again"
+            android:textColor="@color/app_color"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="@font/sf_pro_display_semibold" />
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

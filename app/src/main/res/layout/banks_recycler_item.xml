@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="80dp"
+    android:id="@+id/bank_recycler_item"
+    android:layout_gravity="center"
+    android:background="@drawable/rec"
+    android:orientation="horizontal"
+    android:layout_marginTop="15dp"
+    android:padding="16dp"
+    android:clickable="true"
+    android:focusable="true">
+
+    <ImageView
+        android:id="@+id/bank_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/hsbc_logo"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"
+        android:padding="7dp"
+        android:background="@drawable/white"
+        android:contentDescription="@null" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp">
+
+        <TextView
+            android:id="@+id/bank_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bank_1"
+            android:textSize="20sp"
+            android:fontFamily="@font/sf_pro_display_medium" />
+
+        <TextView
+            android:id="@+id/bank_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_3654"
+            android:textSize="16sp"
+            android:fontFamily="@font/sf_pro_display_regular" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/add_plus"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/plus"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@drawable/blue"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:contentDescription="@null" />
+
+</LinearLayout>

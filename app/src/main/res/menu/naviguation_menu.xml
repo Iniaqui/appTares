@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nouvelle_transaction"
+            android:title="@string/nouvelle_transaction"
+            android:icon="@drawable/nouvelle"
+            android:fontFamily="@font/sf_pro_display_medium" />
+
+        <item
+            android:id="@+id/gestion_compte"
+            android:title="@string/gestion_compte"
+            android:icon="@drawable/compte"
+            android:fontFamily="@font/sf_pro_display_medium" />
+
+        <item
+            android:id="@+id/historique_transaction"
+            android:title="@string/historique_transaction"
+            android:icon="@drawable/historique"
+            android:fontFamily="@font/sf_pro_display_medium" />
+
+        <item
+            android:id="@+id/contacts"
+            android:title="@string/contacts"
+            android:icon="@drawable/contact"
+            android:fontFamily="@font/sf_pro_display_medium" />
+
+        <item
+            android:id="@+id/parametres"
+            android:title="@string/parametres"
+            android:icon="@drawable/parametres"
+            android:fontFamily="@font/sf_pro_display_medium" />
+
+        <item
+            android:id="@+id/aide"
+            android:title="@string/aide"
+            android:icon="@drawable/help"
+            android:fontFamily="@font/sf_pro_display_medium" />
+
+    </group>
+
+    <item android:title="@string/quitter">
+
+        <menu>
+
+            <item
+                android:id="@+id/quitter"
+                android:title="@null"
+                android:icon="@drawable/quit_exit" />
+
+        </menu>
+
+    </item>
+
+</menu>

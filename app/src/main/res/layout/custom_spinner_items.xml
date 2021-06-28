@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/countries_spinner_layout"
+    tools:ignore="UseCompoundDrawables" >
+
+    <ImageView
+        android:id="@+id/country_image"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/drap"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="7dp"
+        android:contentDescription="@null" />
+
+    <TextView
+        android:id="@+id/country_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/votre_pays"
+        android:textSize="13sp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:fontFamily="@font/sf_pro_display_regular" />
+
+    <TextView
+        android:id="@+id/country_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:text="@string/votre_pays"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:fontFamily="@font/sf_pro_display_regular" />
+
+</LinearLayout>

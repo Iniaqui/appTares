@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1e32fa"
+    tools:context=".LoginPinActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbar"
+        android:background="@color/transperent"
+        app:title="@string/tares"
+        app:titleTextColor="@color/app_color"
+        app:logo="@drawable/hsbc_logo"
+        android:theme="@style/ThemeOverlay.AppCompat.DayNight.ActionBar" />
+
+
+    <ImageView
+        android:id="@+id/image2View"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:adjustViewBounds="true"
+        android:scaleType="center"
+        android:layout_marginTop="-200dp"
+        android:contentDescription="@null"
+        app:srcCompat="@drawable/image2" />
+
+    <LinearLayout
+        android:id="@+id/profile_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerHorizontal="true" >
+
+        <!--circle imageview library can be used-->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/girl" />
+
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/michelle_bella"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/sf_pro_display_semibold" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/image3View"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_layout"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/fond"
+        android:contentDescription="@null" />
+
+
+    <TextView
+        android:id="@+id/welcome_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_back"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        android:layout_alignTop="@id/image3View"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:fontFamily="@font/sf_pro_display_semibold" />
+
+    <TextView
+        android:id="@+id/login_with_pin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_with_pin"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        android:layout_marginTop="13dp"
+        android:layout_below="@id/welcome_back"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:fontFamily="@font/sf_pro_display_medium" />
+
+
+    <LinearLayout
+        android:id="@+id/pin_inputs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/login_with_pin"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp">
+
+        <EditText
+            android:id="@+id/editTextNumberSigned0"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/rec"
+            android:ems="10"
+            android:maxLength="1"
+            android:maxLines="1"
+            android:imeOptions="actionNext"
+            android:inputType="numberSigned"
+            tools:ignore="LabelFor,MissingConstraints"
+            android:autofillHints="no"
+            android:fontFamily="@font/sf_pro_display_regular" />
+
+        <EditText
+            android:id="@+id/editTextNumberSigned1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/rec"
+            android:ems="10"
+            android:maxLength="1"
+            android:maxLines="1"
+            android:imeOptions="actionNext"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:inputType="numberSigned"
+            tools:ignore="LabelFor,MissingConstraints"
+            android:autofillHints="no"
+            android:fontFamily="@font/sf_pro_display_regular" />
+
+        <EditText
+            android:id="@+id/editTextNumberSigned2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/rec"
+            android:ems="10"
+            android:maxLength="1"
+            android:maxLines="1"
+            android:imeOptions="actionNext"
+            android:inputType="numberSigned"
+            tools:ignore="LabelFor,MissingConstraints"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:importantForAutofill="no"
+            android:fontFamily="@font/sf_pro_display_regular" />
+
+        <EditText
+            android:id="@+id/editTextNumberSigned3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/rec"
+            android:ems="10"
+            android:maxLength="1"
+            android:maxLines="1"
+            android:imeOptions="actionNext"
+            android:inputType="numberSigned"
+            tools:ignore="LabelFor,MissingConstraints"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:importantForAutofill="no"
+            android:fontFamily="@font/sf_pro_display_regular" />
+
+        <EditText
+            android:id="@+id/editTextNumberSigned4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/rec"
+            android:ems="10"
+            android:maxLength="1"
+            android:maxLines="1"
+            android:imeOptions="actionGo"
+            android:inputType="numberSigned"
+            tools:ignore="LabelFor,MissingConstraints"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:importantForAutofill="no"
+            android:fontFamily="@font/sf_pro_display_regular" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/img_fingersprint"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/pin_inputs"
+        android:background="@drawable/fingerprint"
+        android:contentDescription="@null" />
+
+    <TextView
+        android:id="@+id/txt_fingersprint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_using_fingerprint"
+        android:layout_below="@id/img_fingersprint"
+        android:textColor="#1e32fa"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textSize="20sp"
+        android:fontFamily="@font/sf_pro_display_medium" />
+
+
+</RelativeLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1e32fa"
+    tools:context=".InscriptionActivity3">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbar"
+        android:background="@color/transperent"
+        app:title="@string/tares"
+        app:titleTextColor="@color/app_color"
+        app:logo="@drawable/hsbc_logo"
+        android:theme="@style/ThemeOverlay.AppCompat.DayNight.ActionBar" />
+
+
+    <ImageView
+        android:id="@+id/image2View"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="-30dp"
+        android:contentDescription="@null"
+        app:srcCompat="@drawable/image3" />
+
+    <TextView
+        android:id="@+id/inscription_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/inscription"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/sf_pro_display_bold" />
+
+
+    <ImageView
+        android:id="@+id/image3View"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fond"
+        android:layout_below="@+id/inscription_text"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@null" />
+
+    <TextView
+        android:id="@+id/please"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/entrez_votre_adresse_postale"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:layout_alignTop="@id/image3View"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/sf_pro_display_semibold" />
+
+
+    <TextView
+        android:id="@+id/adresse_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/votre_adresse"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_below="@id/please"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:fontFamily="@font/sf_pro_display_medium" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/paris_rue12"
+        android:id="@+id/editTextAddressSignup"
+        android:imeOptions="actionGo"
+        android:drawablePadding="16dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="16dp"
+        android:layout_below="@+id/adresse_text"
+        android:autofillHints="@string/paris_rue12"
+        android:inputType="text"
+        android:fontFamily="@font/sf_pro_display_regular" />
+
+
+    <TextView
+        android:id="@+id/continue_button"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:text="@string/continuer"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/blue"
+        android:layout_below="@id/editTextAddressSignup"
+        android:fontFamily="@font/sf_pro_display_semibold" />
+
+    <ImageView
+        android:id="@+id/image5View"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/home"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerInside"
+        android:contentDescription="@null" />
+
+</RelativeLayout>

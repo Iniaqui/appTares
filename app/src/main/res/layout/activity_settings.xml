@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1e32fa"
+    tools:context=".SettingsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbar"
+        android:background="@color/transperent"
+        app:title="@string/tares"
+        app:titleTextColor="@color/app_color"
+        app:logo="@drawable/hsbc_logo"
+        android:theme="@style/ThemeOverlay.AppCompat.DayNight.ActionBar" />
+
+
+    <LinearLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/profil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profil"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/sf_pro_display_bold" />
+
+        <TextView
+            android:id="@+id/modifier_profil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/modifier_profil"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginStart="135dp"
+            android:layout_marginLeft="135dp"
+            android:fontFamily="@font/sf_pro_display_semibold" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/profile_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/top_layout"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        tools:ignore="UselessParent">
+
+        <!--circle imageview library can be used-->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/girl" />
+
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/michelle_bella"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/sf_pro_display_semibold" />
+
+        <TextView
+            android:id="@+id/profile_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_229_90_91_92_93"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:paddingTop="5dp"
+            android:fontFamily="@font/sf_pro_display_medium" />
+
+        <TextView
+            android:id="@+id/profile_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email_example"
+            android:textColor="@color/gray"
+            android:textSize="13sp"
+            android:paddingTop="3dp"
+            android:fontFamily="@font/sf_pro_display_light" />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_layout"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="13dp"
+        app:contentPadding="16dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_3"
+            android:textColor="@color/orange"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/sf_pro_display_medium" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/comptes"
+            android:layout_marginTop="30dp"
+            android:textSize="12sp"
+            android:textColor="@color/orange"
+            android:fontFamily="@font/sf_pro_display_regular" />
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/image3View"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fond"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/card_layout"
+        android:contentDescription="@null" />
+
+
+    <LinearLayout
+        android:id="@+id/partager_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_alignTop="@id/image3View"
+        tools:ignore="UseCompoundDrawables,UselessParent">
+
+        <TextView
+            android:id="@+id/partager_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/partager_son_profil"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/sf_pro_display_medium" />
+
+        <ImageView
+            android:id="@+id/partager_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fleche"
+            android:layout_marginStart="150dp"
+            android:layout_marginLeft="150dp"
+            android:contentDescription="@null" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/message_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/partager_layout"
+        tools:ignore="UseCompoundDrawables,UselessParent">
+
+        <TextView
+            android:id="@+id/message_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/centre_de_message"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/sf_pro_display_medium" />
+
+        <ImageView
+            android:id="@+id/message_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="133dp"
+            android:layout_marginLeft="133dp"
+            android:src="@drawable/fleche"
+            android:contentDescription="@null" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/parametres_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/message_layout"
+        tools:ignore="UseCompoundDrawables,UselessParent">
+
+        <TextView
+            android:id="@+id/parametres_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/parametres_de_securite"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/sf_pro_display_medium" />
+
+        <ImageView
+            android:id="@+id/parametres_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fleche"
+            android:layout_marginStart="110dp"
+            android:layout_marginLeft="110dp"
+            android:contentDescription="@null" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/notifications_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/parametres_layout"
+        tools:ignore="UseCompoundDrawables,UselessParent">
+
+        <TextView
+            android:id="@+id/notifications_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/notifications"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/sf_pro_display_medium" />
+
+        <ImageView
+            android:id="@+id/notifications_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fleche"
+            android:layout_marginStart="185dp"
+            android:layout_marginLeft="185dp"
+            android:contentDescription="@null" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/news_letters_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/notifications_layout"
+        tools:ignore="UseCompoundDrawables,UselessParent">
+
+        <TextView
+            android:id="@+id/news_letters_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/news_letters"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/sf_pro_display_medium" />
+
+        <ImageView
+            android:id="@+id/news_letters_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fleche"
+            android:layout_marginStart="180dp"
+            android:layout_marginLeft="180dp"
+            android:contentDescription="@null" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/aides_contacts_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/news_letters_layout"
+        tools:ignore="UseCompoundDrawables,UselessParent">
+
+        <TextView
+            android:id="@+id/aides_contacts_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/aides_contacts"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/sf_pro_display_medium" />
+
+        <ImageView
+            android:id="@+id/aides_contacts_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fleche"
+            android:layout_marginStart="155dp"
+            android:layout_marginLeft="155dp"
+            android:contentDescription="@null" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/mentions_legales_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/aides_contacts_layout"
+        tools:ignore="UseCompoundDrawables,UselessParent">
+
+        <TextView
+            android:id="@+id/mentions_legales_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mentions_legales"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/sf_pro_display_medium" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

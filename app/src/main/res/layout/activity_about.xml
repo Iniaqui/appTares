@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".AboutActivity" >
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/toolbar"
+            android:background="@color/transperent"
+            app:title="@string/tares"
+            app:titleTextColor="@color/app_color"
+            app:logo="@drawable/hsbc_logo"
+            android:theme="@style/ThemeOverlay.AppCompat.DayNight.ActionBar" />
+
+
+        <LinearLayout
+            android:id="@+id/top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentTop="true" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/payment_wallet_app_ui_kit"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/sf_pro_display_bold" />
+
+            <ImageView
+                android:layout_width="600dp"
+                android:layout_height="5dp"
+                android:src="@drawable/line"
+                android:scaleType="fitXY"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:layout_marginTop="20dp"
+                android:contentDescription="@null" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/about_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/top_layout"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/about"
+                android:textColor="@color/app_color"
+                android:textSize="23sp"
+                android:fontFamily="@font/sf_pro_display_medium" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/first_about"
+                android:textSize="13sp"
+                android:lineSpacingExtra="2dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/sf_pro_display_regular" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/second_about"
+                android:textSize="13sp"
+                android:lineSpacingExtra="2dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/sf_pro_display_regular" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/rules_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/about_layout"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/first_rule"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/sf_pro_display_regular" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/second_rule"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/sf_pro_display_regular" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/third_rule"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/sf_pro_display_regular" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fourth_rule"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/sf_pro_display_regular" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fifth_rule"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/sf_pro_display_regular" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sixth_rule"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/sf_pro_display_regular" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/seventh_rule"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/sf_pro_display_regular" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/eighth_rule"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/sf_pro_display_regular" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nineth_rule"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/sf_pro_display_regular" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tenth_rule"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/sf_pro_display_regular" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/eleventh_rule"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/sf_pro_display_regular" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/twelveth_rule"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/sf_pro_display_regular" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/credits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/credits"
+            android:textColor="@color/app_color"
+            android:textSize="23sp"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_below="@id/rules_layout"
+            android:fontFamily="@font/sf_pro_display_medium" />
+
+        <LinearLayout
+            android:id="@+id/fonts_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/credits"
+            android:layout_marginTop="13dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fonts"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/sf_pro_display_medium" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/first_font"
+                android:textSize="13sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/sf_pro_display_regular" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/second_font"
+                android:textSize="13sp"
+                android:fontFamily="@font/sf_pro_display_regular" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/icons_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/fonts_layout"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/icons"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/sf_pro_display_medium" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/first_icon"
+                android:textSize="13sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/sf_pro_display_regular" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/second_icon"
+                android:textSize="13sp"
+                android:fontFamily="@font/sf_pro_display_regular" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/avatars_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/icons_layout"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/avatars"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/sf_pro_display_medium" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/first_avatar"
+                android:textSize="13sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/sf_pro_display_regular" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/second_avatar"
+                android:textSize="13sp"
+                android:fontFamily="@font/sf_pro_display_regular" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/vectors_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/avatars_layout"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/vectors"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/sf_pro_display_medium" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/first_vector"
+                android:textSize="13sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/sf_pro_display_regular" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/second_vector"
+                android:textSize="13sp"
+                android:fontFamily="@font/sf_pro_display_regular" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/upcoming"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/upcomings"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_below="@id/vectors_layout"
+            android:fontFamily="@font/sf_pro_display_medium" />
+
+
+        <LinearLayout
+            android:id="@+id/upcoming_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/upcoming"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="80dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/first_upcoming"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/sf_pro_display_regular" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/second_upcoming"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/sf_pro_display_regular" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/third_upcoming"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/sf_pro_display_regular" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fourth_upcoming"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/sf_pro_display_regular" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fifth_upcoming"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/sf_pro_display_regular" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sixth_upcoming"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/sf_pro_display_regular" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/seventh_upcoming"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/sf_pro_display_regular" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/eighth_upcoming"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/sf_pro_display_regular" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nineth_upcoming"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/sf_pro_display_regular" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tenth_upcoming"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/sf_pro_display_regular" />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:src="@drawable/line"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:contentDescription="@null"
+            android:layout_marginTop="-50dp"
+            android:layout_below="@id/upcoming_layout" />
+
+        <LinearLayout
+            android:id="@+id/bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/line" >
+
+            <TextView
+                android:id="@+id/website"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/creativealive_com"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/sf_pro_display_regular" />
+
+            <TextView
+                android:id="@+id/mail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/info_creativealive_com"
+                android:textSize="12sp"
+                android:textStyle="italic|bold"
+                android:layout_marginStart="70dp"
+                android:layout_marginLeft="70dp"
+                android:fontFamily="@font/sf_pro_display_light" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

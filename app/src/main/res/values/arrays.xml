@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="currencies_array">
+        <item name="spinner_title">Monnaie :</item>
+        <item name="franc">FCFA (Francs)</item>
+        <item name="dollar">$ (Dollars)</item>
+        <item name="euro">€ (Euros)</item>
+        <item name="livre">£ (Livres)</item>
+        <item name="yen">¥ (Yens|Yuan)</item>
+        <item name="franc">F (Francs)</item>
+        <item name="dinar">dinars</item>
+        <item name="peso">pesos</item>
+        <item name="roupie">roupies</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CardsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/toolbar"
+            android:background="@color/transperent"
+            app:title="@string/tares"
+            app:titleTextColor="@color/app_color"
+            app:logo="@drawable/hsbc_logo"
+            android:theme="@style/ThemeOverlay.AppCompat.DayNight.ActionBar" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:id="@+id/top_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:ignore="UselessParent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cards"
+                    android:textColor="@color/black"
+                    android:textSize="27sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/sf_pro_display_bold" />
+
+                <TextView
+                    android:id="@+id/new_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/new_btn"
+                    android:textColor="@color/app_color"
+                    android:textSize="17sp"
+                    android:textStyle="italic"
+                    android:layout_marginStart="150dp"
+                    android:layout_marginLeft="150dp"
+                    android:fontFamily="@font/sf_pro_display_semibold" />
+
+            </LinearLayout>
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/card_view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp" />
+
+            <me.relex.circleindicator.CircleIndicator
+                android:id="@+id/circle_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="-50dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/last_statement_cutstanding"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="italic"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/sf_pro_display_medium" />
+
+            <TextView
+                android:id="@+id/montant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_85_627"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:fontFamily="@font/sf_pro_display_bold" />
+
+            <LinearLayout
+                android:id="@+id/due_date_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/due_date"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/sf_pro_display_medium" />
+
+                <TextView
+                    android:id="@+id/due_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_28_nov"
+                    android:textSize="15sp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/sf_pro_display_regular" />
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="480dp"
+                android:layout_height="5dp"
+                android:src="@drawable/line"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:layout_marginTop="20dp"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/spend_analyser"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/sf_pro_display_semibold" />
+
+            <ImageView
+                android:id="@+id/image3View"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:background="@drawable/rec"
+                android:layout_marginTop="80dp"
+                android:contentDescription="@null" />
+
+
+            <LinearLayout
+                android:id="@+id/cards_layout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="-400dp"
+                android:gravity="center"
+                android:layout_gravity="center">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/shopping_card"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    app:contentPadding="10dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="10dp"
+                    android:background="@color/cardview_light_background">
+
+                    <ImageView
+                        android:id="@+id/shopping_icon"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/shopping_bag"
+                        android:contentDescription="@null" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/shopping"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:layout_marginTop="50dp"
+                        android:fontFamily="@font/sf_pro_display_semibold" />
+
+                    <TextView
+                        android:id="@+id/shopping_mount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_10_120"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="65dp"
+                        android:fontFamily="@font/sf_pro_display_bold" />
+
+                    <ImageView
+                        android:id="@+id/shopping_line"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/red_line"
+                        android:layout_marginTop="80dp"
+                        android:contentDescription="@null" />
+
+                    <TextView
+                        android:id="@+id/shopping_percent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_26"
+                        android:textSize="13sp"
+                        android:textStyle="italic"
+                        android:layout_marginTop="83dp"
+                        android:layout_marginStart="33dp"
+                        android:layout_marginLeft="33dp"
+                        android:fontFamily="@font/sf_pro_display_medium" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fastfood_drink_card"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    app:contentPadding="10dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="10dp"
+                    android:background="@color/cardview_light_background" >
+
+                    <ImageView
+                        android:id="@+id/fastfood_drink_icon"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/fastfood_drink"
+                        android:contentDescription="@null" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/food_drinks"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:layout_marginTop="50dp"
+                        android:fontFamily="@font/sf_pro_display_semibold" />
+
+                    <TextView
+                        android:id="@+id/fastfood_drink_mount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_2_500"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="65dp"
+                        android:fontFamily="@font/sf_pro_display_bold" />
+
+                    <ImageView
+                        android:id="@+id/fastfood_drink_line"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/orange_line"
+                        android:layout_marginTop="80dp"
+                        android:contentDescription="@null" />
+
+                    <TextView
+                        android:id="@+id/fastfood_drink_percent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_14"
+                        android:textSize="13sp"
+                        android:textStyle="italic"
+                        android:layout_marginTop="83dp"
+                        android:layout_marginStart="33dp"
+                        android:layout_marginLeft="33dp"
+                        android:fontFamily="@font/sf_pro_display_medium" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/travel_plane_card"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    app:contentPadding="10dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="10dp"
+                    android:background="@color/cardview_light_background" >
+
+                    <ImageView
+                        android:id="@+id/travel_plane_icon"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/travel_plane"
+                        android:contentDescription="@null" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/travel_flights"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:layout_marginTop="50dp"
+                        android:fontFamily="@font/sf_pro_display_semibold" />
+
+                    <TextView
+                        android:id="@+id/travel_plane_mount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_2_500"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="65dp"
+                        android:fontFamily="@font/sf_pro_display_bold" />
+
+                    <ImageView
+                        android:id="@+id/travel_plane_line"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/skyblue_line"
+                        android:layout_marginTop="80dp"
+                        android:contentDescription="@null" />
+
+                    <TextView
+                        android:id="@+id/travel_plane_percent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_5"
+                        android:textSize="13sp"
+                        android:textStyle="italic"
+                        android:layout_marginTop="83dp"
+                        android:layout_marginStart="33dp"
+                        android:layout_marginLeft="33dp"
+                        android:fontFamily="@font/sf_pro_display_medium" />
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/cards_layout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="-400dp"
+                android:gravity="center"
+                android:layout_gravity="center" >
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fuel_station_card"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    app:contentPadding="10dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="10dp"
+                    android:background="@color/cardview_light_background">
+
+                    <ImageView
+                        android:id="@+id/fuel_station_icon"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/fuel_station"
+                        android:contentDescription="@null" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fuel"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:layout_marginTop="50dp"
+                        android:fontFamily="@font/sf_pro_display_semibold" />
+
+                    <TextView
+                        android:id="@+id/fuel_station_mount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_15_964"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="65dp"
+                        android:fontFamily="@font/sf_pro_display_bold" />
+
+                    <ImageView
+                        android:id="@+id/fuel_station_line"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/green_line"
+                        android:layout_marginTop="80dp"
+                        android:contentDescription="@null" />
+
+                    <TextView
+                        android:id="@+id/fuel_station_percent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_15"
+                        android:textSize="13sp"
+                        android:textStyle="italic"
+                        android:layout_marginTop="83dp"
+                        android:layout_marginStart="33dp"
+                        android:layout_marginLeft="33dp"
+                        android:fontFamily="@font/sf_pro_display_medium" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/emi_card"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    app:contentPadding="10dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="10dp"
+                    android:background="@color/cardview_light_background" >
+
+                    <ImageView
+                        android:id="@+id/emi_icon"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/emi_pink"
+                        android:contentDescription="@null" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/emi"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:layout_marginTop="50dp"
+                        android:fontFamily="@font/sf_pro_display_semibold" />
+
+                    <TextView
+                        android:id="@+id/emi_mount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_24_672"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="65dp"
+                        android:fontFamily="@font/sf_pro_display_bold" />
+
+                    <ImageView
+                        android:id="@+id/emi_line"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/pink_line"
+                        android:layout_marginTop="80dp"
+                        android:contentDescription="@null" />
+
+                    <TextView
+                        android:id="@+id/emi_percent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_44"
+                        android:textSize="13sp"
+                        android:textStyle="italic"
+                        android:layout_marginTop="83dp"
+                        android:layout_marginStart="33dp"
+                        android:layout_marginLeft="33dp"
+                        android:fontFamily="@font/sf_pro_display_medium" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/layers_others_card"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    app:contentPadding="10dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="10dp"
+                    android:background="@color/cardview_light_background" >
+
+                    <ImageView
+                        android:id="@+id/layers_others_icon"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/layers_others"
+                        android:contentDescription="@null" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/others"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:layout_marginTop="50dp"
+                        android:fontFamily="@font/sf_pro_display_semibold" />
+
+                    <TextView
+                        android:id="@+id/layers_others_mount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_820"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="65dp"
+                        android:fontFamily="@font/sf_pro_display_bold" />
+
+                    <ImageView
+                        android:id="@+id/layers_others_line"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/blue_line"
+                        android:layout_marginTop="80dp"
+                        android:contentDescription="@null" />
+
+                    <TextView
+                        android:id="@+id/layers_others_percent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_6"
+                        android:textSize="13sp"
+                        android:textStyle="italic"
+                        android:layout_marginTop="83dp"
+                        android:layout_marginStart="33dp"
+                        android:layout_marginLeft="33dp"
+                        android:fontFamily="@font/sf_pro_display_medium" />
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/image5View"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home"
+            android:scaleType="centerInside"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:contentDescription="@null" />
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

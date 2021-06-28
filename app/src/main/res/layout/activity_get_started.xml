@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1e32fa"
+    tools:context=".GetStartedActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbar"
+        android:background="@color/transperent"
+        app:title="@string/tares"
+        app:titleTextColor="@color/app_color"
+        app:logo="@drawable/hsbc_logo"
+        android:theme="@style/ThemeOverlay.AppCompat.DayNight.ActionBar" />
+
+    <ImageView
+        android:id="@+id/image2View"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:contentDescription="@null"
+        app:srcCompat="@drawable/image3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/get_started"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/sf_pro_display_bold" />
+
+    <ImageView
+        android:id="@+id/image3View"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/fond"
+        android:contentDescription="@null" />
+
+    <TextView
+        android:id="@+id/please"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:text="@string/mobile"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:layout_alignTop="@id/image3View"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:fontFamily="@font/sf_pro_display_semibold" />
+
+
+    <LinearLayout
+        android:id="@+id/countries_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/please"
+        android:layout_marginTop="12dp" >
+
+        <LinearLayout
+            android:id="@+id/countries_button"
+            android:layout_width="125dp"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:background="@drawable/blue"
+            android:padding="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:id="@+id/country_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/votre_pays"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:fontFamily="@font/sf_pro_display_light" />
+
+            <ImageView
+                android:id="@+id/country_drap"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/drap"
+                android:contentDescription="@null"
+                android:layout_marginLeft="7dp"
+                android:layout_marginStart="7dp" />
+
+        </LinearLayout>
+
+
+        <Spinner
+            android:id="@+id/countries_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:prompt="@string/countries_prompt"
+            android:spinnerMode="dialog" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/nunero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/countries_layout"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/phone_number"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/sf_pro_display_medium"
+            app:layout_constraintStart_toStartOf="@+id/country_button" />
+
+        <LinearLayout
+            android:id="@+id/nunero_champ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/phone_prefix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_229"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="23sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/sf_pro_display_semibold" />
+
+            <EditText
+                android:id="@+id/editTextPhoneSign"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:hint="@string/_67823840"
+                android:inputType="phone"
+                android:textColor="@color/gray"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:maxLines="1"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="20dp"
+                android:textColorHint="@color/gray"
+                android:importantForAutofill="no"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/sf_pro_display_regular" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/started_button"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="@string/get_started"
+        android:layout_below="@id/nunero"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:padding="10dp"
+        android:textSize="23sp"
+        android:textStyle="normal"
+        android:background="@drawable/blue"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:contentDescription="@null"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/sf_pro_display_semibold" />
+
+
+    <LinearLayout
+        android:id="@+id/link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/started_button"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp">
+
+        <TextView
+            android:id="@+id/txtAlready"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/already"
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:fontFamily="@font/sf_pro_display_regular" />
+
+        <TextView
+            android:id="@+id/txtGoToSignin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/signin"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/app_color"
+            android:fontFamily="@font/sf_pro_display_medium" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/image5View"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/home"
+        android:scaleType="centerInside"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:contentDescription="@null" />
+
+</RelativeLayout>

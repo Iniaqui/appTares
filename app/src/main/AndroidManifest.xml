@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.taresmobileapp">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@drawable/image1"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/image1"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TaresLogin"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <activity android:name=".AboutActivity" />
+        <activity android:name=".AddCardActivity" />
+        <activity android:name=".BankAccountsActivity" />
+        <activity android:name=".CardsActivity" />
+        <activity android:name=".ConfirmationActivity" />
+        <activity android:name=".FingerprintLoginActivity" />
+        <activity android:name=".GetStartedActivity" />
+        <activity android:name=".HelpActivity" />
+        <activity android:name=".HistoryActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".ImagePickerActivity" />
+        <activity android:name=".InscriptionActivity1" />
+        <activity android:name=".InscriptionActivity2" />
+        <activity android:name=".InscriptionActivity3" />
+        <activity android:name=".LicenseActivity" />
+        <activity android:name=".LoginPinActivity" />
+        <activity android:name=".ModifyProfilActivity" />
+        <activity android:name=".NewPaymentActivity" />
+        <activity android:name=".SendMoneyActivity" />
+        <activity android:name=".SettingsActivity" />
+        <activity android:name=".VerificationActivity" />
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- uCrop cropping activity -->
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- cache directory file provider paths -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+    </application>
+
+</manifest>

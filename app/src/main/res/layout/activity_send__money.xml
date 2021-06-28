@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddCardActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/toolbar"
+            android:background="@color/transperent"
+            app:title="@string/tares"
+            app:titleTextColor="@color/app_color"
+            app:logo="@drawable/hsbc_logo"
+            android:theme="@style/ThemeOverlay.AppCompat.DayNight.ActionBar" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/s_lectionnez_le_compte_d_envoi_pour_continuer_svp"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:textColor="@color/blue"
+            android:fontFamily="@font/sf_pro_display_semibold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:background="@drawable/rec"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp" >
+
+            <RadioGroup
+                android:id="@+id/compte_groupe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                android:theme="@style/RadioButtonTheme"
+                tools:ignore="UselessParent" >
+
+                <RadioButton
+                    android:id="@+id/tares"
+                    android:text="@string/tares"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sf_pro_display_medium" />
+
+                <RadioButton
+                    android:id="@+id/mtn_mobile_money"
+                    android:text="@string/mtn_mobile_money"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sf_pro_display_medium" />
+
+                <RadioButton
+                    android:id="@+id/societe_generale"
+                    android:text="@string/soci_te_g_n_rale"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sf_pro_display_medium" />
+
+                <RadioButton
+                    android:id="@+id/moov_money"
+                    android:text="@string/moov_money"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sf_pro_display_medium" />
+
+                <RadioButton
+                    android:id="@+id/orange_money"
+                    android:text="@string/orange_money"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sf_pro_display_medium" />
+
+                <RadioButton
+                    android:id="@+id/boursorama"
+                    android:text="@string/boursorama"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sf_pro_display_medium" />
+
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/ajouter_un_compte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ajouter_un_compte"
+                android:textColor="@color/blue"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/sf_pro_display_bold" />
+
+            <ImageButton
+                android:id="@+id/btnContinue"
+                android:layout_width="200dp"
+                android:layout_height="55dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/continuer"
+                android:contentDescription="@null" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/image5View"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/home"
+        android:scaleType="centerInside"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:contentDescription="@null" />
+
+</RelativeLayout>
